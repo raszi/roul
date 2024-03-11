@@ -2,7 +2,7 @@
   (:refer-clojure :exclude [rand-int rand rand-nth]))
  
 
-(def generator (java.util.Random.))
+(def ^java.util.Random generator (java.util.Random.))
 
 (defn rand
   "Return a random float between start (inclusive) and end (exclusive).
